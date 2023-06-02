@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: black;
+    background-position: auto;
+    background-size: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+}
+
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(251, 255, 250);
+    font-size: 50px;
+    font-weight: 0;
+    font-family: "Bradley Hand ITC", cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+}
+
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffd700;
+    font-family: 'Ink Free';
+    font-weight: bolder;
+    font-style: italic;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+ul li p a{
+    font-weight: bold;
+    color: rgba(204, 199, 199, 0.5);
+}
+
+.Contact{
+    position: relative;
+    min-height: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.Contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.Contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Alex Brush";
+    color: white;
+}
+
+.Contact .content p{
+    font-weight: 300;
+    color: white;
+    font-family: Montserrat;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .ContactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .ContactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .ContactInfo .box .Icon{
+    min-width: 50px;
+    height: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.container .ContactInfo .box .Icon .Text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .ContactInfo .box .Icon .Text, h4{
+    font-weight: 500;
+    color: #f80707;
+    font-family: Oswald;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.container .ContactInfo .box .Icon .Text, p{
+    font-weight: 500;
+    color: aqua;
+    font-family: Oswald;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: aqua;
+    padding-top: 0px;
+    font-weight: 500;
+    font-family: Oswald;
+    text-align: center;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    color: wheat;
+    border-bottom: 2px solid aqua;
+    background: none;
+    outline: none;
+    resize: none;
+    padding-bottom: 4px;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: wheat;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: rgb(244, 10, 10);
+    font-size: 12px;
+    font-family: Oswald;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px){
+    .Contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .ContactInfo{
+        margin-bottom: 40px;
+    }
+    .container .ContactInfo .contactForm{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1060px){
+    ul{
+        margin-left: -17%;
+    }
+    ul li{
+        margin-left: 70px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 800px){
+    ul li {
+        margin-left: 58px;
+        font-size: 17px;
+    }
+}

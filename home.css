@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: black;
+    background-position: auto;
+    background-size: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+}
+
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(251, 255, 250);
+    font-size: 50px;
+    font-weight: 0;
+    font-family: "Bradley Hand ITC", cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+}
+
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffd700;
+    font-family: 'Ink Free';
+    font-weight: bolder;
+    font-style: italic;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+ul li p a{
+    font-weight: bold;
+    color: rgba(204, 199, 199, 0.5);
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+    text-align: justify;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-right: 350px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 1.4px;
+    line-height: 35px;
+}
+
+.content h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: aqua;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+   text-decoration: none;
+   color: black;
+   transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.content span{
+    color: aqua;
+    font-size: 60px;
+}
+@media (width: 1060px) {
+    .main{
+        padding-right: 13.5%;
+    }
+    .menu{
+        padding-left: 12px;
+    }
+    .content h1{
+        padding-left: 19%;
+    }
+    .content .par{
+        padding-left: 19%;
+        padding-right: 304px;
+    }
+}
+
+@media (width: 800px) {
+    .main{
+        padding-right: 22.5%;
+    }
+}
+
+
+@media (width: 320px) {
+    .main {
+        padding-right: 22.5%;
+        padding-bottom: 123%;
+    }
+    .content .par {
+        padding-left: 13%;
+        padding-right: 150px;
+        line-height: 47px;
+        letter-spacing: 4.4px;
+        padding-top: 23px;
+    }
+    .content h1 {
+        padding-left: 13%;
+        letter-spacing: 4px;
+    }
+}
+
+

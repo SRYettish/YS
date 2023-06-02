@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: black;
+    padding-bottom: 1%;
+    background-size: 100%;
+    height: 100%;
+    background-position: auto;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(251, 255, 250);
+    font-size: 50px;
+    font-weight: 0;
+    font-family: "Bradley Hand ITC", cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+}
+
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffd700;
+    font-family: 'Ink Free';
+    font-weight: bolder;
+    font-style: italic;
+    transition: 0.4s ease-in-out;
+}
+
+ul li p a{
+    font-weight: bold;
+    color: rgba(204, 199, 199, 0.5);
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+.main .img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.main .img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.main .img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-bottom: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+.main .full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.main .full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.main .full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1080px){
+    .main{
+        padding-right: 13.2%;
+    }
+    .main .img-gallery{
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding-right: 10%;
+    padding-left: 15%;
+    }
+    .main .full-img{
+    padding-top: 41px;
+    background-position: center;
+    padding-bottom: 43px;
+    }
+    .menu{
+        padding-left: 12px
+    }
+}
+
+@media (max-width: 800px) {
+    .main{
+        padding-right: 22.2%;
+    }
+}
+

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: black;
+    background-position: auto;
+    background-size: 100%;
+    height: 100%;
+    padding-bottom: 1%;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(251, 255, 250);
+    font-size: 50px;
+    font-weight: 0;
+    font-family: "Bradley Hand ITC", cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+}
+
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffd700;
+    font-family: 'Ink Free';
+    font-weight: bolder;
+    font-style: italic;
+    transition: 0.4s ease-in-out;
+}
+
+ul li p a{
+    font-weight: bold;
+    color: rgba(204, 199, 199, 0.5);
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+.body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    justify-content: center;
+    gap: 1.5rem;
+    width: 80%;
+    margin: 100px auto 50px;
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+
+.post-box{
+    background: wheat;
+    box-shadow: 0 4px 14px hsl(355deg 25% 15%/ 10%);
+    padding-top: 15px;
+    border-radius: 0.5rem;
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(185, 35, 135);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    padding-bottom: 2px;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.post-reference{
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.post-description{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.information{
+    color: silver;
+    text-align: center;
+    font-size: 1.0rem;
+    margin-top: 45px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 60rem){
+    body {
+        padding: 3rem;
+    }
+
+    .grid{
+        grid-gap: 3rem;
+    }
+}
+
+@media (max-width: 1080px){
+    .main{
+        padding-right: 13.2%;
+    }
+    .menu{
+        padding-left: 8px;
+    }
+    .post{
+        padding-left: 10%;
+    }
+    .information{
+        padding-left: 12%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main{
+        padding-right: 22.4%;
+    }
+    .information {
+        padding-left: 20%;
+    }
+    .post {
+        padding-left: 19%;
+    }
+}

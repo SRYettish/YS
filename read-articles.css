@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background: black;
+    background-position: auto;
+    background-size: 100%;
+    padding-bottom: 1%;
+    height: 100%;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: rgb(251, 255, 250);
+    font-size: 50px;
+    font-weight: 0;
+    font-family: "Bradley Hand ITC", cursive;
+    padding-left: 20px;
+    float: left;
+    padding-top: 19px;
+}
+
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 38px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffd700;
+    font-family: 'Ink Free';
+    font-weight: bolder;
+    font-style: italic;
+    transition: 0.4s ease-in-out;
+}
+
+ul li p a{
+    font-weight: bold;
+    color: rgba(204, 199, 199, 0.5);
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+.post-header{
+    width: 100%;
+    height: 500px;
+    color: aqua;
+}
+
+.post-container{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+}
+.back-home{
+    color: aliceblue;
+    font-size: 0.9rem;
+}
+
+.header-title{
+    width: 90%;
+    font-size: 2.6rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-content{
+    margin-top: 3rem !important;
+}
+
+.sub-heading{
+    font-size: 1.2rem;
+    color: beige;
+}
+
+.post-text{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+    color: bisque;
+}
+
+a{
+    text-decoration: none;
+}
